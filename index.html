@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        style-src 'self' 'unsafe-inline';
+        script-src 'self';
+      "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quad Viewer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="brand">Quad Viewer</div>
+      <div class="hint">4 panes • auto-resize • local app • quick links</div>
+
+      <button id="homeAll" class="btn">Home all</button>
+      <button id="reloadAll" class="btn">Reload all</button>
+      <button id="muteAll" class="btn">Mute</button>
+      <button id="unmuteAll" class="btn">Unmute</button>
+    </header>
+
+    <main class="layout">
+      <section class="grid" id="grid"></section>
+
+      <!-- Bottom bar: normal (no embedded browser), just quick links -->
+      <footer class="bottomBar">
+        <div class="bottomLeft">
+          <span class="pill">AI Links</span>
+          <button class="linkBtn" data-url="https://chat.openai.com/">ChatGPT</button>
+          <button class="linkBtn" data-url="https://x.ai/">xAI</button>
+          <button class="linkBtn" data-url="https://gemini.google.com/">Gemini</button>
+          <button class="linkBtn" data-url="https://www.google.com/">Google</button>
+        </div>
+
+        <div class="bottomRight">
+          <input id="openUrl" class="openUrl" placeholder="Type any URL and press Enter (opens in browser)" />
+          <button id="openUrlBtn" class="btn">Open</button>
+        </div>
+      </footer>
+    </main>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "yt-quad",
+  "version": "1.0.0",
+  "description": "Local open-source 4-pane viewer + AI dock (YouTube/TikTok/Instagram + browser tabs)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^30.0.0"
+  }
+}
