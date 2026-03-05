@@ -83,3 +83,17 @@ Check with:
 ```bash
 node -v
 npm -v
+
+
+
+Clone the Repository
+git clone https://github.com/0xDL01/quad-viewer.git
+cd quad-viewer
+
+Install Dependencies
+npm install
+
+Run the Application
+npm start
+
+The Quad Viewer workspace will open.
